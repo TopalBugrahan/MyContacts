@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_school"
+        android:name="com.example.mycontacts.ui.school.SchoolFragment"
+        android:label="@string/menu_school"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_family"
+        android:name="com.example.mycontacts.ui.family.FamilyFragment"
+        android:label="@string/menu_family"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_friend"
+        android:name="com.example.mycontacts.ui.friend.FriendFragment"
+        android:label="@string/menu_friend"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_besti"
+        android:name="com.example.mycontacts.ui.besti.Besti"
+        android:label="@string/menu_besti"
+        tools:layout="@layout/fragment_besti" />
+    <fragment
+        android:id="@+id/nav_work"
+        android:name="com.example.mycontacts.ui.work.WorkFragment"
+        android:label="@string/menu_work"
+        tools:layout="@layout/fragment_work" />
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.example.mycontacts.ui.main.MainFragment"
+        android:label="@string/menu_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/nav_create"
+        android:name="com.example.mycontacts.ui.createCard.CreateCardFragment"
+        android:label="Create"
+        tools:layout="@layout/fragment_create_card" />
+</navigation>
